@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:padding="@dimen/paddingPantalla"
+    android:weightSum="1"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_horizontal|left"
+        android:orientation="vertical"
+        android:padding="@dimen/paddingPantalla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/titulo"
+            android:layout_marginLeft="4dp"
+            android:text="@string/app_name"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/un_jugador"
+            style="@style/boton"
+            android:layout_width="wrap_content"
+            android:onClick="incioJuego"
+            android:text="@string/un_jugador" />
+
+        <Button
+            android:id="@+id/dos_jugadores"
+            style="@style/boton"
+            android:onClick="incioJuego"
+            android:text="@string/dos_jugadores" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupDificultad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/facil"
+                style="@style/radio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/facil"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/normal"
+                style="@style/radio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:cursorVisible="false"
+                android:focusableInTouchMode="false"
+                android:text="@string/normal"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/imposible"
+                style="@style/radio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/dificil"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/a1"
+            style="@style/casillas"
+            android:onClick="pulsarCasilla" />
+
+        <ImageView
+            android:id="@+id/a2"
+            style="@style/casillas"
+            android:onClick="pulsarCasilla"
+            android:src="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/a3"
+            style="@style/casillas"
+            android:onClick="pulsarCasilla" />
+
+        <ImageView
+            android:id="@+id/b1"
+            style="@style/casillas"
+            android:onClick="pulsarCasilla" />
+
+        <ImageView
+            android:id="@+id/b2"
+            style="@style/casillas"
+            android:onClick="pulsarCasilla"
+            android:src="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/b3"
+            style="@style/casillas"
+            android:onClick="pulsarCasilla" />
+
+        <ImageView
+            android:id="@+id/c1"
+            style="@style/casillas"
+            android:onClick="pulsarCasilla" />
+
+        <ImageView
+            android:id="@+id/c2"
+            style="@style/casillas"
+            android:onClick="pulsarCasilla"
+            android:src="@drawable/circulo" />
+
+        <ImageView
+            android:id="@+id/c3"
+            style="@style/casillas"
+            android:onClick="pulsarCasilla" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.NoActionBar.Fullscreen">
+        <!-- Customize your theme here. -->
+        <!-- <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item> -->
+    </style>
+
+    <style name="titulo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textoTitulo</item>
+    </style>
+
+    <style name="boton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">@dimen/anchoMinBoton</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/altoMinBoton</item>
+        <item name="android:layout_margin">@dimen/margenBoton</item>
+        <item name="android:textSize">@dimen/textoBoton</item>
+        <item name="android:background">@drawable/boton</item>
+        <item name="android:onClick">inicioJuego</item>
+    </style>
+
+    <style name="radio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textoRadioBoton</item>
+        <item name="android:alpha">3</item>
+    </style>
+
+    <style name="casillas">
+        <item name="android:layout_width">@dimen/casillas</item>
+        <item name="android:layout_height">@dimen/casillas</item>
+        <item name="android:src">@drawable/casilla</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:onClick">pulsarCasilla</item>
+    </style>
+
+</resources>
