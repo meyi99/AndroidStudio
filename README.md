@@ -1,1 +1,2 @@
-# Android Studio apps
+# Android Studio
+Apps para android
